@@ -1,0 +1,16 @@
+2022-12-25 14:41:25 [com.xxl.job.core.thread.JobThread#run]-[133]-[xxl-job, JobThread-1-1671950485248] <br>----------- xxl-job job execute start -----------<br>----------- Param:
+2022-12-25 14:41:25 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[39]-[xxl-job, JobThread-1-1671950485248] XXL-JOB, Hello World.
+2022-12-25 14:41:25 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[43]-[xxl-job, JobThread-1-1671950485248] beat at:0
+2022-12-25 14:41:27 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[43]-[xxl-job, JobThread-1-1671950485248] beat at:1
+2022-12-25 14:41:29 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[43]-[xxl-job, JobThread-1-1671950485248] beat at:2
+2022-12-25 14:41:31 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[43]-[xxl-job, JobThread-1-1671950485248] beat at:3
+2022-12-25 14:41:33 [com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]-[43]-[xxl-job, JobThread-1-1671950485248] beat at:4
+2022-12-25 14:41:35 [com.xxl.job.core.thread.JobThread#run]-[179]-[xxl-job, JobThread-1-1671950485248] <br>----------- xxl-job job execute end(finish) -----------<br>----------- Result: handleCode=200, handleMsg = null
+2022-12-25 14:41:35 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[197]-[xxl-job, executor TriggerCallbackThread] <br>----------- xxl-job job callback finish.
+2022-12-25 14:41:44 [com.xxl.job.core.thread.JobThread#run]-[194]-[xxl-job, JobThread-1-1671950485248] <br>----------- JobThread toStop, stopReason:web container destroy and kill the job.
+2022-12-25 14:41:44 [com.xxl.job.core.thread.JobThread#run]-[204]-[xxl-job, JobThread-1-1671950485248] <br>----------- JobThread Exception:java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.xxl.job.core.thread.JobThread.run(JobThread.java:114)
+<br>----------- xxl-job job execute end(error) -----------
